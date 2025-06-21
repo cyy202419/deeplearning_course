@@ -1,0 +1,23 @@
+# 模型配置
+model:
+  image_size: 224
+  patch_size: 16
+  num_classes: 10
+  dim: 256
+  depth: 6
+  heads: 8
+  mlp_dim: 512
+  dropout: 0.1
+  emb_dropout: 0.1
+
+# 训练配置
+training:
+  epochs: 1
+  batch_size: 128
+  lr: 0.0003
+  weight_decay: 0.05
+
+# 数据配置
+data:
+  root: ./cifar10
+  num_workers: 4

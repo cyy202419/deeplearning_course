@@ -1,0 +1,21 @@
+model:
+  image_size: 32
+  patch_size: 4
+  num_classes: 10
+  dim: 256
+  depth: 6
+  heads: 6
+  mlp_dim: 512
+  dropout: 0.2
+  emb_dropout: 0.1
+
+training:
+  epochs: 4
+  batch_size: 64
+  lr: 0.0001
+  weight_decay: 0.05
+
+# 数据配置
+data:
+  root: ./cifar10
+  num_workers: 2 
